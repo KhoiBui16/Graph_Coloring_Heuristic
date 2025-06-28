@@ -101,6 +101,14 @@ def main():
     g = st.session_state.graph
 
     st.subheader("📥 Nhập input theo đề bài")
+    
+    st.markdown(
+    """
+    📂 [**Xem các test case mẫu** tại đây:](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/tree/main/test_case)
+    """,
+    unsafe_allow_html=True
+    )
+    
     st.text_area(
         "Toàn bộ input",
         key="input_text",
