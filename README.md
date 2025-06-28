@@ -91,6 +91,17 @@ P I
 ├── requirements.txt            # Danh sách thư viện cần cài đặt
 ├── README.md                   # File mô tả bài toán, hướng dẫn và giải pháp
 ├── demo_graph_coloring.mp4     # (Tuỳ chọn) Video demo quá trình chạy ứng dụng
+├── test_case/                  # Thư mục chứa các bộ test input/output mẫu
+    ├──case1/
+        ├──input1.txt
+        ├──output1.txt
+    ├──case2/
+        ├──input2.txt
+        ├──output2.txt
+    ...
+    ├──case5/
+      ├──input5.txt
+      ├──output5.txt
 ├── assets/
 │   ├── ui_input.png            # Ảnh minh hoạ giao diện nhập input và thao tác
 │   └── ui_result.png           # Ảnh minh hoạ giao diện kết quả tô màu
