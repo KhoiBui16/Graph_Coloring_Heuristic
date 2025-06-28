@@ -19,7 +19,6 @@
 - [🖼 Minh hoạ giao diện](#-minh-hoạ-giao-diện)
 - [📺 Video demo quá trình thử nghiệm](#-video-demo-quá-trình-thử-nghiệm)
 - [🧪 Hướng dẫn chạy local](#-hướng-dẫn-chạy-local)
-- [🚀 Getting Started](#-getting-started)
 
 ---
 
