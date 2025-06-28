@@ -117,10 +117,10 @@ Ngoài ra:
 ## 🖼 Minh hoạ giao diện
 
 ### 🧩 Giao diện nhập input và thao tác tô màu
-![UI Demo](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/img/UI.png)
+![UI Demo](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_input.png)
 
 ### 🎨 Giao diện kết quả sau khi tô màu
-![UI Result](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/img/output_demo.png)
+![UI Result](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result.png)
 
 ## 📺 Video demo quá trình thử nghiệm
 
