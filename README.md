@@ -7,7 +7,7 @@
 
 [Link github](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/)
 [Link demo app](https://graph-coloring.streamlit.app/)
-
+[Link test case](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/tree/main/test_case)
 ---
 
 ## 📚 Mục lục
@@ -130,7 +130,7 @@ Ngoài ra:
 ## 🖼 Minh hoạ giao diện
 
 ### 🧩 Giao diện nhập input và thao tác tô màu
-![UI Demo](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_input.png)
+![UI Demo](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result.png)
 
 ### 🎨 Giao diện kết quả sau khi tô màu
 ![UI Result](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result.png)
