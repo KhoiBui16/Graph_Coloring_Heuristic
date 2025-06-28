@@ -84,10 +84,15 @@ P I
 ## 📂 Cấu trúc thư mục
 
 ```
-├── app.py               # Giao diện chính
-├── graph_model.py       # Thuật toán tô màu đồ thị
-├── README.md            # File mô tả
-└── video_demo.mp4       # (tùy chọn) Video thử nghiệm
+├── app.py                      # Giao diện chính sử dụng Streamlit
+├── graph_model.py              # Định nghĩa lớp Graph và các thuật toán tô màu
+├── requirements.txt            # Danh sách thư viện cần cài đặt
+├── README.md                   # File mô tả bài toán, hướng dẫn và giải pháp
+├── demo_graph_coloring.mp4     # (Tuỳ chọn) Video demo quá trình chạy ứng dụng
+├── assets/
+│   ├── ui_input.png            # Ảnh minh hoạ giao diện nhập input và thao tác
+│   └── ui_result.png           # Ảnh minh hoạ giao diện kết quả tô màu
+
 ```
 
 ---
