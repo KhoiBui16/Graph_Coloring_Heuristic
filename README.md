@@ -6,8 +6,11 @@
 **Lớp:** CS12.P22  
 
 [Link github](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/)
+
 [Link demo app](https://graph-coloring.streamlit.app/)
+
 [Link test case](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/tree/main/test_case)
+
 ---
 
 ## 📚 Mục lục
