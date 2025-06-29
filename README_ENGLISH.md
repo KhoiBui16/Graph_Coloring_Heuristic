@@ -1,7 +1,8 @@
 
 # 🎨 Graph Coloring Using Greedy Heuristic
 
-**Full Name:** Bui Nhat Anh Khoi 
+**Full Name:** Bui Nhat Anh Khoi
+
 **Student ID:** 23520761  
 **Class:** CS112.P22  
 
