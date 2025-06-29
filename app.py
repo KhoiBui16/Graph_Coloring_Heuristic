@@ -69,8 +69,8 @@ def main():
     - Một dòng gồm `v` số nguyên — là màu của từng đỉnh, theo đúng thứ tự xuất hiện trong input.
 
     #### 📌 Ví dụ:
-    ```
     Input:
+    ```
     7 18
     J R Q F L P I
     L I
@@ -91,8 +91,10 @@ def main():
     I R
     P Q
     P I
-
+    ```
+    
     Output:
+    ```
     0 1 0 2 1 3 4
     ```
     """)
