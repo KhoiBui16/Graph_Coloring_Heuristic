@@ -132,12 +132,12 @@ Additional features:
 ## 🖼 UI Illustration
 
 ### 🧩 Input and Controls Interface  
-![UI Input](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_input.png)
+![UI Input](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_input_english.png)
 
 ---
 
 ### 🎨 Result After Coloring  
-![UI Result](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result.png)
+![UI Result](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result_english.png)
 
 ---
 
