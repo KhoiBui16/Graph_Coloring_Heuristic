@@ -133,7 +133,7 @@ Ngoài ra:
 ## 🖼 Minh hoạ giao diện
 
 ### 🧩 Giao diện nhập input và thao tác tô màu
-![UI Demo](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result.png)
+![UI Demo](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_input.png)
 
 ### 🎨 Giao diện kết quả sau khi tô màu
 ![UI Result](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result.png)
