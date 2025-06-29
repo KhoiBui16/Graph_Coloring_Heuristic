@@ -18,7 +18,7 @@ def init_session():
     if "input_text" not in st.session_state:
         st.session_state.input_text = ""
 
-# --- Reset the entire session ---
+# --- Reset session state ---
 def reset_all():
     st.session_state.clear()
 
@@ -34,39 +34,39 @@ def handle_input():
         g.load_graph(v, e, names, edge_list)
         st.success("Graph loaded successfully!")
     except Exception as ex:
-        st.error(f"Error while parsing input: {ex}")
+        st.error(f"Error reading input: {ex}")
 
-# --- Color the next vertex ---
+# --- Perform one coloring step ---
 def step_coloring():
     g = st.session_state.graph
     changed = g.step_one_vertex()
     if not changed:
-        st.info("Graph is fully colored!")
+        st.info("Coloring completed!")
 
-# --- Color all vertices ---
+# --- Perform full coloring ---
 def full_coloring():
     g = st.session_state.graph
     while g.step_one_vertex():
         pass
-    st.success("Graph has been fully colored!")
+    st.success("Full coloring completed!")
 
 # --- Main UI ---
 def main():
     st.set_page_config(page_title="Graph Coloring", layout="centered")
-    st.title("🎨 Graph Coloring using Greedy Heuristic")
+    st.title("🎨 Graph Coloring using Heuristic Strategy")
 
     st.markdown("""
-    ### 📘 Problem Statement
-    Given an undirected simple graph, color the vertices using a **GREEDY ALGORITHM** so that no adjacent vertices have the same color and the total number of colors used is minimized.  
-    Colors are represented using 24-bit RGB values, ranging from `0` (black `#000000`) to `16777215` (white `#FFFFFF`).
+    ### 📘 Problem Description
+    Given an undirected simple graph, color the vertices using a **Greedy Algorithm** such that adjacent vertices have different colors and the total number of colors used is minimized.
+    Colors are represented using 24-bit RGB values ranging from `0` (black `#000000`) to `16777215` (white `#FFFFFF`).
 
     #### 🔽 INPUT:
-    - First line: two integers `v` and `e`, the number of vertices and edges.
-    - Second line: `v` vertex names.
-    - Next `e` lines: each contains two vertex names indicating an edge.
+    - First line: two integers `v` (number of vertices) and `e` (number of edges).
+    - Second line: `v` strings representing vertex names.
+    - Next `e` lines: each line contains two vertex names connected by an edge.
 
     #### 🔼 OUTPUT:
-    - A single line of `v` integers — colors assigned to each vertex in the same order as the input.
+    - A line with `v` integers — the color assigned to each vertex in input order.
 
     #### 📌 Example:
     ```
@@ -100,17 +100,20 @@ def main():
     init_session()
     g = st.session_state.graph
 
-    st.subheader("📥 Input Graph Data")
+    st.subheader("📥 Enter your input")
 
-    st.markdown("""
-    📂 [**View sample test cases** here](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/tree/main/test_case)
-    """, unsafe_allow_html=True)
+    st.markdown(
+    """
+    📂 [**Sample test cases here**](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/tree/main/test_case)
+    """,
+    unsafe_allow_html=True
+    )
 
     st.text_area(
-        "Graph Input",
+        "Full input",
         key="input_text",
         height=150,
-        placeholder="Enter the input in the format shown above...",
+        placeholder="Enter your input data as described...",
     )
 
     st.markdown("""
@@ -126,7 +129,7 @@ def main():
     col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
 
     with col1:
-        if st.button("📥 Load Input"):
+        if st.button("📥 Load Graph"):
             handle_input()
 
     with col2:
@@ -134,7 +137,7 @@ def main():
             step_coloring()
 
     with col3:
-        if st.button("🖌 Full Coloring"):
+        if st.button("🖌 Color All"):
             full_coloring()
 
     with col4:
@@ -147,13 +150,13 @@ def main():
         st.pyplot(fig)
         st.subheader("📊 Graph Status")
 
-        st.write("**🧠 Vertex Info Matrix:**")
+        st.write("**🧠 Information Matrix:**")
         degree_list = [len(g.adjList[i]) for i in range(g.v)]
         df = pd.DataFrame([
-            g.nodeNames,
-            degree_list,
-            g.colors
-        ], index=["Vertex", "Initial Degree", "Color"])
+            list(map(str, g.nodeNames)),
+            list(map(int, degree_list)),
+            list(map(int, g.colors))
+        ], index=["Node Name", "Initial Degree", "Color"]).T
 
         st.dataframe(df.style.set_properties(**{'text-align': 'center'}).set_table_styles([{
             'selector': 'th',
@@ -164,9 +167,9 @@ def main():
         }]), use_container_width=True)
 
         used_colors = set(c for c in g.colors if c != -1)
-        st.write(f"**🌈 Total colors used:** {len(used_colors)}")
+        st.write(f"**🌈 Number of Colors Used:** {len(used_colors)}")
 
-        if st.download_button("📷 Download Graph Image (PNG)", data=fig_to_bytes(fig), file_name="colored_graph.png", mime="image/png"):
+        if st.download_button("📷 Download Graph Image (PNG)", data=fig_to_bytes(fig), file_name="graph_colored.png", mime="image/png"):
             st.success("Image downloaded successfully!")
 
 # Run the app
