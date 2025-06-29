@@ -22,6 +22,7 @@
 - [📂 Cấu trúc thư mục](#-cấu-trúc-thư-mục)
 - [⚙️ Các chức năng của ứng dụng](#️-các-chức-năng-của-ứng-dụng)
 - [🖼 Minh hoạ giao diện](#-minh-hoạ-giao-diện)
+- [🧩 Hướng dẫn sử dụng ứng dụng](#-hướng-dẫn-sử-dụng-ứng-dụng)
 - [📺 Video demo quá trình thử nghiệm](#-video-demo-quá-trình-thử-nghiệm)
 - [🧪 Hướng dẫn chạy local](#-hướng-dẫn-chạy-local)
 
@@ -135,13 +136,58 @@ Ngoài ra:
 ### 🧩 Giao diện nhập input và thao tác tô màu
 ![UI Demo](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_input.png)
 
+---
+
 ### 🎨 Giao diện kết quả sau khi tô màu
 ![UI Result](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/blob/main/assets/ui_result.png)
+
+---
+
+## 🧩 **Hướng dẫn sử dụng ứng dụng**
+
+1️⃣ Nhập dữ liệu đồ thị
+- Tại ô “Toàn bộ input”, hãy nhập dữ liệu đầu vào đúng định dạng như ví dụ:
+```
+v e
+tên_đỉnh_1 tên_đỉnh_2 ... tên_đỉnh_v
+đỉnh_u1 đỉnh_v1
+đỉnh_u2 đỉnh_v2
+...
+đỉnh_ue đỉnh_ve
+```
+Bấm nút 📥 Đọc dữ liệu để khởi tạo đồ thị trong hệ thống.
+
+2️⃣ Tô màu đồ thị
+- Sau khi nạp dữ liệu thành công, bạn có thể chọn 1 trong 2 chế độ tô màu:
+
+
+| Chức năng       | Mô tả |
+|-----------------|-------|
+| ▶ Bước tô tiếp  | Tô màu cho 1 đỉnh tiếp theo |
+| 🖌 Tô toàn bộ    | Tự động tô toàn bộ |
+
+3️⃣ Xem kết quả
+
+Ứng dụng sẽ hiển thị:
+
+- 🎨 Đồ thị đã tô màu (mỗi đỉnh có một màu rõ ràng).
+
+- 📊 Bảng trạng thái gồm: Tên đỉnh, bậc (degree), màu đã gán.
+
+- 🌈 Số màu đã sử dụng tính đến thời điểm hiện tại.
+
+- 📷 Tải ảnh kết quả bằng nút “Tải ảnh đồ thị (PNG)”.
+
+4️⃣ Thiết lập lại
+
+Sử dụng nút 🔄 Thiết lập lại để xoá trạng thái hiện tại và bắt đầu lại từ đầu với input mới.
+
+
+---
 
 ## 📺 Video demo quá trình thử nghiệm
 
 👉 [Link video demo chạy app](https://www.youtube.com/watch?v=fQZRF86sa0k)
-
 
 ---
 
