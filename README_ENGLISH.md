@@ -1,10 +1,9 @@
 
 # 🎨 Graph Coloring Using Greedy Heuristic
 
-**Full Name:** Bui Nhat Anh Khoi
-
-**Student ID:** 23520761  
-**Class:** CS112.P22  
+- **Full Name:** Bui Nhat Anh Khoi
+- **Student ID:** 23520761  
+- **Class:** CS112.P22  
 
 [🔗 GitHub Repository](https://github.com/KhoiBui16/Graph_Coloring_Heuristic)  
 [🚀 Live Demo App](https://graph-coloring.streamlit.app/)  
