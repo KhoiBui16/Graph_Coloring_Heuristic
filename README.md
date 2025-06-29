@@ -3,7 +3,7 @@
 
 **Họ tên:** Bùi Nhật Anh Khôi  
 **MSSV:** 23520761  
-**Lớp:** CS12.P22  
+**Lớp:** CS112.P22  
 
 [Link github](https://github.com/KhoiBui16/Graph_Coloring_Heuristic/)
 
