@@ -197,8 +197,8 @@ Follow these steps to clone and run app on your local machine.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/KhoiBui16/graph-coloring-app.git
-cd graph-coloring-app
+git clone https://github.com/KhoiBui16/Graph_Coloring_Heuristic.git
+cd Graph_Coloring_Heuristic
 ```
 
 ### 2. Set up your environment
