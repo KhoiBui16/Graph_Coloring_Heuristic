@@ -55,7 +55,7 @@ def full_coloring():
 def main():
     logo = Image.open("./assets/logo-uit.png")
     st.set_page_config(
-        page_title="UIT@CS | KhoiBui1601 | Tô màu đồ thị", 
+        page_title="UIT@CS | KhoiBui16 | Tô màu đồ thị", 
         page_icon=logo,
         layout="centered"
     )
