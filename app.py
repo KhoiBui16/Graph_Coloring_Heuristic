@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 from graph_model import Graph
+from PIL import Image
 
 # --- Helper to convert matplotlib fig to bytes for download ---
 def fig_to_bytes(fig):
@@ -52,7 +53,12 @@ def full_coloring():
 
 # --- Giao diện chính ---
 def main():
-    st.set_page_config(page_title="Tô màu đồ thị", layout="centered")
+    logo = Image.open("./assets/logo-uit.png")
+    st.set_page_config(
+        page_title="UIT@CS | KhoiBui1601 | Tô màu đồ thị", 
+        page_icon=logo,
+        layout="centered"
+    )
     st.title("🎨 Tô màu đồ thị theo chiến lược Heuristic")
 
     st.markdown("""
