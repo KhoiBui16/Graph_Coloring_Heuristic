@@ -243,7 +243,7 @@ Then go to: [http://localhost:8501](http://localhost:8501)
 
 ## 📬 Contact
 
-- 📧 Email: khoibui1601.email@example.com  
+- 📧 Email: khoibui1601@gmail.com  
 - 🐛 Issue: [GitHub Issue Tracker](https://github.com/KhoiBui16/graph-coloring-app/issues)
 
 ---
